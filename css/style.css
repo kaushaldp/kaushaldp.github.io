@@ -110,17 +110,17 @@ html {
 }
 
 #about {
-  padding: 250px 25% 0 25%;
+  padding: 25% 25% 0 25%;
 }
 
 #contact {
-  padding: 0 25% 250px 25%;
+  padding: 0 25% 25% 25%;
 }
 
 #work {
   box-sizing: border-box;
   width: 100%;
-  padding: 250px 0;
+  padding: 25% 0;
   margin: 0 auto;
   overflow: auto;
   background-color: #000;
