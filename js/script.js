@@ -3,6 +3,17 @@ $(document).ready(function () {
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
   $("html").css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/work/" + backgroundThumbnailImages[Math.floor(Math.random() * backgroundThumbnailImages.length)] + ")"});
 
+  //Applying background images to the Video Thumbnail Containers
+  var totalThumbnails = backgroundThumbnailImages.length;
+  for (var i = 0; i < totalThumbnails; i++) {
+    $(".video-thumbnail-container:nth-child(" + [i+1] +")").css({"background-image": "url(img/work/" + backgroundThumbnailImages[i] + ")"});
+  }
+
+  //Adding the copyright date
+  var date = new Date();
+  var year = date.getFullYear();
+  $("footer").html("Copyright &copy; " + year + " Kaushal Shah");
+
   //Change color of the menu on scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -14,11 +25,6 @@ $(document).ready(function () {
     }
   });
 
-  //When clicking on About
-  $("#menu-item-1").click(function () {
-
-  });
-
   //When clicking on Arrow Down
   $("#arrow-downward").click(function () {
     $("html, body").animate({
@@ -27,22 +33,31 @@ $(document).ready(function () {
   });
 
   //When clicking on Work
-  $("#menu-item-2").click(function () {
+  $("#menu-item-1").click(function () {
     $("html, body").animate({
         scrollTop: $("#work").offset().top
     }, 1000);
   });
 
   //When clicking on Reel
-  $("#menu-item-3").click(function () {
+  $("#menu-item-2").click(function () {
     $("html, body").animate({
         scrollTop: $("#reel").offset().top
     }, 1000);
   });
 
+  //When clicking on About
+  $("#menu-item-3").click(function () {
+    $("html, body").animate({
+        scrollTop: $("#about").offset().top
+    }, 1000);
+  });
+
   //When clicking on Contact
   $("#menu-item-4").click(function () {
-
+    $("html, body").animate({
+        scrollTop: $("#contact").offset().top
+    }, 1000);
   });
 
   //When clicking on All
@@ -96,15 +111,4 @@ $(document).ready(function () {
   $(".video-thumbnail-container").hover(function () {
     $(this).find(".video-thumbnail-text").toggleClass("show-video-thumbnail-text");
   });
-
-  //Applying background images to the Video Thumbnail Containers
-  var totalThumbnails = backgroundThumbnailImages.length;
-  for (var i = 0; i < totalThumbnails; i++) {
-      $(".video-thumbnail-container:nth-child(" + [i+1] +")").css({"background-image": "url(img/work/" + backgroundThumbnailImages[i] + ")"});
-  }
-
-  //Adding the copyright date
-  var date = new Date();
-  var year = date.getFullYear();
-  $("#footer").html("Copyright &copy; " + year + " Kaushal Shah");
 });
