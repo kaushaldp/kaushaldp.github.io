@@ -106,7 +106,7 @@ html {
 #work {
   box-sizing: border-box;
   width: 100%;
-  padding: 25% 0;
+  padding: 25% 0 0 0;
   margin: 0 auto;
   overflow: auto;
   background-color: #000;
@@ -149,7 +149,7 @@ html {
 #reel {
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 25% 25% 25%;
+  padding: 25%;
   width: 100%;
   text-align: center;
   font-weight: 900;
