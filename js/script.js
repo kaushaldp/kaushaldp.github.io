@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  //Scroll to Work after 2.5 seconds
+  setTimeout(function()
+    {$("html, body").animate({
+        scrollTop: $("#work").offset().top
+    }, 1000);}
+  ,1000);
+
   //Add & Remove Background Images here
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
   $("body").css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/work/" + backgroundThumbnailImages[Math.floor(Math.random() * backgroundThumbnailImages.length)] + ")"});
@@ -16,30 +23,33 @@ $(document).ready(function () {
 
   //When clicking on About
   $("#menu-item-1").click(function () {
-    $("html, body").animate({
-        scrollTop: $("#about").offset().top
-    }, 1000);
+
   });
 
   //When clicking on Arrow Down
   $("#arrow-downward").click(function () {
     $("html, body").animate({
-        scrollTop: $("#about").offset().top
+        scrollTop: $("#work").offset().top
     }, 1000);
   });
 
-  //When clicking on Work and Down Arrow
+  //When clicking on Work
   $("#menu-item-2").click(function () {
     $("html, body").animate({
         scrollTop: $("#work").offset().top
     }, 1000);
   });
 
-  //When clicking on Contact
+  //When clicking on Reel
   $("#menu-item-3").click(function () {
     $("html, body").animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#reel").offset().top
     }, 1000);
+  });
+
+  //When clicking on Contact
+  $("#menu-item-4").click(function () {
+
   });
 
   //When clicking on All
