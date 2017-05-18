@@ -12,7 +12,7 @@ $(document).ready(function () {
   //Adding the copyright date
   var date = new Date();
   var year = date.getFullYear();
-  $("footer").html("Copyright &copy; " + year + " Kaushal Shah");
+  $("#copyright").html("Copyright &copy; " + year + " Kaushal Shah");
 
   //Change color of the menu on scroll
   $(window).scroll(function () {
