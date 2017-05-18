@@ -168,7 +168,7 @@ header {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 50px 25% 0 25%;
+  padding: 50px 25%;
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -201,7 +201,6 @@ header {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 50px 25% 0 25%;
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -209,6 +208,14 @@ header {
   letter-spacing: 3px;
   background-color: #fff;
   color: #000;
+}
+
+#about {
+  padding: 0 25%;
+}
+
+#contact {
+  padding: 50px 25% 0 25%;
 }
 
 footer {
