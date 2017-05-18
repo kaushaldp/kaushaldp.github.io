@@ -1,4 +1,13 @@
-$(document).ready(function () {
+$(window).on('load', function (e) {
+  // Show the footer on scrolling to the work section
+  $(document).on('scroll', function() {
+    if($(this).scrollTop() >= $('#work').position().top){
+      $("footer").css("display", "block");
+    } else {
+      $("footer").css("display", "none");
+    }
+  });
+
   //Add & Remove Background Images here
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
   $("html").css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/work/" + backgroundThumbnailImages[Math.floor(Math.random() * backgroundThumbnailImages.length)] + ")"});
@@ -49,14 +58,14 @@ $(document).ready(function () {
   //When clicking on About
   $("#menu-item-3").click(function () {
     $("html, body").animate({
-        scrollTop: $("#about").offset().top
+        scrollTop: $(document).height()
     }, 1000);
   });
 
   //When clicking on Contact
   $("#menu-item-4").click(function () {
     $("html, body").animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $(document).height()
     }, 1000);
   });
 
@@ -128,4 +137,8 @@ $(document).ready(function () {
   $(".video-thumbnail-container").hover(function () {
     $(this).find(".video-thumbnail-text").toggleClass("show-video-thumbnail-text");
   });
+
+  // Get the height of the footer and apply it to the invisible block
+  var footerHeight = $("footer").height();
+  $("#invisible-block").css("height", footerHeight);
 });
