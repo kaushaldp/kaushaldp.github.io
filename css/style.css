@@ -123,7 +123,7 @@ header {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding: 25% 0 0 0;
+  padding-top: 50px;
   margin: 0 auto;
   overflow: auto;
   background-color: #000;
@@ -168,7 +168,7 @@ header {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 25% 25% 0 25%;
+  padding: 50px 25% 0 25%;
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -201,6 +201,7 @@ header {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 50px 25% 0 25%;
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -209,18 +210,11 @@ header {
   background-color: #000;
 }
 
-#about {
-  padding: 25% 25% 0 25%;
-}
-
-#contact {
-  padding: 25%;
-}
-
 footer {
   z-index: 2;
   position: relative;
   margin: 0 auto;
+  padding-top: 50px;
   width: 100%;
   background-color: #000;
   font-weight: 700;
