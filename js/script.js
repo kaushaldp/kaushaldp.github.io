@@ -18,10 +18,10 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
       $('#menu').css("background-color", "#000");
-      $('#header').css("border-bottom", "1px solid #fff");
+      $('#menu').css("border-bottom", "1px solid #fff");
     } else {
       $('#menu').css("background-color", "transparent");
-      $('#header').css("border-bottom", "none");
+      $('#menu').css("border-bottom", "none");
     }
   });
 
