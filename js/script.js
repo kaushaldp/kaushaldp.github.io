@@ -65,6 +65,7 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-1").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".video-thumbnail-text").css("display", "table-cell");
   });
 
   //When clicking on Narrative
@@ -72,9 +73,13 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-2").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".video-thumbnail-text").css("display", "table-cell");
     $(".commercial").css("filter", "brightness(10%)");
+    $(".commercial .video-thumbnail-text").css("display", "none");
     $(".documentary").css("filter", "brightness(10%)");
+    $(".documentary .video-thumbnail-text").css("display", "none");
     $(".music-video").css("filter", "brightness(10%)");
+    $(".music-video .video-thumbnail-text").css("display", "none");
   });
 
   //When clicking on Commercial
@@ -82,9 +87,13 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-3").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".video-thumbnail-text").css("display", "table-cell");
     $(".narrative").css("filter", "brightness(10%)");
+    $(".narrative .video-thumbnail-text").css("display", "none")
     $(".documentary").css("filter", "brightness(10%)");
+    $(".documentary .video-thumbnail-text").css("display", "none")
     $(".music-video").css("filter", "brightness(10%)");
+    $(".music-video .video-thumbnail-text").css("display", "none")
   });
 
   //When clicking on Documentary
@@ -92,9 +101,13 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-4").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".video-thumbnail-text").css("display", "table-cell");
     $(".narrative").css("filter", "brightness(10%)");
+    $(".narrative .video-thumbnail-text").css("display", "none")
     $(".commercial").css("filter", "brightness(10%)");
+    $(".commercial .video-thumbnail-text").css("display", "none")
     $(".music-video").css("filter", "brightness(10%)");
+    $(".music-video .video-thumbnail-text").css("display", "none")
   });
 
   //When clicking on Music Video
@@ -102,9 +115,13 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-5").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".video-thumbnail-text").css("display", "table-cell");
     $(".narrative").css("filter", "brightness(10%)");
+    $(".narrative .video-thumbnail-text").css("display", "none")
     $(".commercial").css("filter", "brightness(10%)");
+    $(".commercial .video-thumbnail-text").css("display", "none")
     $(".documentary").css("filter", "brightness(10%)");
+    $(".documentary .video-thumbnail-text").css("display", "none")
   });
 
   //When hovering over the Video Thumbnail Containers
