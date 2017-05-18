@@ -86,7 +86,7 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#000");
     $("#sub-menu-item-3").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
-    $(".commercial").css("filter", "brightness(10%)");
+    $(".narrative").css("filter", "brightness(10%)");
     $(".documentary").css("filter", "brightness(10%)");
     $(".music-video").css("filter", "brightness(10%)");
   });
@@ -96,8 +96,8 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#000");
     $("#sub-menu-item-4").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".narrative").css("filter", "brightness(10%)");
     $(".commercial").css("filter", "brightness(10%)");
-    $(".documentary").css("filter", "brightness(10%)");
     $(".music-video").css("filter", "brightness(10%)");
   });
 
@@ -106,9 +106,9 @@ $(document).ready(function () {
     $(".sub-menu-items").css("color", "#000");
     $("#sub-menu-item-5").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".narrative").css("filter", "brightness(10%)");
     $(".commercial").css("filter", "brightness(10%)");
     $(".documentary").css("filter", "brightness(10%)");
-    $(".music-video").css("filter", "brightness(10%)");
   });
 
   //When hovering over the Video Thumbnail Containers
