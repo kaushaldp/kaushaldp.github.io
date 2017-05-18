@@ -64,47 +64,47 @@ $(document).ready(function () {
   $("#sub-menu-item-1").click(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-1").css ("color", "#777");
-    $(".video-thumbnail-container").css("filter", "grayscale(0)");
+    $(".video-thumbnail-container").css("filter", "brightness(100%)");
   });
 
   //When clicking on Narrative
   $("#sub-menu-item-2").click(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-2").css ("color", "#777");
-    $(".video-thumbnail-container").css("filter", "grayscale(0)");
-    $(".commercial").css("filter", "grayscale(100%)");
-    $(".documentary").css("filter", "grayscale(100%)");
-    $(".music-video").css("filter", "grayscale(100%)");
+    $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".commercial").css("filter", "brightness(10%)");
+    $(".documentary").css("filter", "brightness(10%)");
+    $(".music-video").css("filter", "brightness(10%)");
   });
 
   //When clicking on Commercial
   $("#sub-menu-item-3").click(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-3").css ("color", "#777");
-    $(".video-thumbnail-container").css("filter", "grayscale(0)");
-    $(".narrative").css("filter", "grayscale(100%)");
-    $(".documentary").css("filter", "grayscale(100%)");
-    $(".music-video").css("filter", "grayscale(100%)");
+    $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".narrative").css("filter", "brightness(10%)");
+    $(".documentary").css("filter", "brightness(10%)");
+    $(".music-video").css("filter", "brightness(10%)");
   });
 
   //When clicking on Documentary
   $("#sub-menu-item-4").click(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-4").css ("color", "#777");
-    $(".video-thumbnail-container").css("filter", "grayscale(0)");
-    $(".narrative").css("filter", "grayscale(100%)");
-    $(".commercial").css("filter", "grayscale(100%)");
-    $(".music-video").css("filter", "grayscale(100%)");
+    $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".narrative").css("filter", "brightness(10%)");
+    $(".commercial").css("filter", "brightness(10%)");
+    $(".music-video").css("filter", "brightness(10%)");
   });
 
   //When clicking on Music Video
   $("#sub-menu-item-5").click(function () {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-5").css ("color", "#777");
-    $(".video-thumbnail-container").css("filter", "grayscale(0)");
-    $(".narrative").css("filter", "grayscale(100%)");
-    $(".commercial").css("filter", "grayscale(100%)");
-    $(".documentary").css("filter", "grayscale(100%)");
+    $(".video-thumbnail-container").css("filter", "brightness(100%)");
+    $(".narrative").css("filter", "brightness(10%)");
+    $(".commercial").css("filter", "brightness(10%)");
+    $(".documentary").css("filter", "brightness(10%)");
   });
 
   //When hovering over the Video Thumbnail Containers
