@@ -55,15 +55,8 @@ $(window).on('load', function (e) {
     }, 1000);
   });
 
-  //When clicking on About
+  //When clicking on Info
   $("#menu-item-3").click(function () {
-    $("html, body").animate({
-        scrollTop: $(document).height()
-    }, 1000);
-  });
-
-  //When clicking on Contact
-  $("#menu-item-4").click(function () {
     $("html, body").animate({
         scrollTop: $(document).height()
     }, 1000);
