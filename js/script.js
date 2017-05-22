@@ -1,13 +1,9 @@
-$(window).on('load', function (e) {
-  // Show the footer on scrolling to the work section
-  $(document).on('scroll', function() {
-    if($(this).scrollTop() >= $('#work').position().top){
-      $("footer").css("display", "block");
-    } else {
-      $("footer").css("display", "none");
-    }
-  });
+//Start at the top always
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
 
+$(window).on('load', function (e) {
   //Add & Remove Background Images here
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
   $("html").css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/work/" + backgroundThumbnailImages[Math.floor(Math.random() * backgroundThumbnailImages.length)] + ")"});
@@ -21,7 +17,7 @@ $(window).on('load', function (e) {
   //Adding the copyright date
   var date = new Date();
   var year = date.getFullYear();
-  $("#copyright").html("Copyright &copy; " + year + " Kaushal Shah");
+  $("footer").html("Copyright &copy; " + year + " Kaushal Shah");
 
   //Change color of the menu on scroll
   $(window).scroll(function () {
@@ -41,24 +37,35 @@ $(window).on('load', function (e) {
     }, "slow");
   });
 
-  //When clicking on Work
+  //When clicking on About
   $("#menu-item-1").click(function () {
+    $("#about").fadeIn();
+  });
+
+  $("#close-about").click(function () {
+    $("#about").fadeOut();
+  });
+
+  //When clicking on Contact
+  $("#menu-item-4").click(function () {
+    $("#contact").fadeIn();
+  });
+
+  $("#close-contact").click(function () {
+    $("#contact").fadeOut();
+  });
+
+  //When clicking on Work
+  $("#menu-item-2").click(function () {
     $("html, body").animate({
         scrollTop: $("#work").offset().top
     }, "slow");
   });
 
   //When clicking on Reel
-  $("#menu-item-2").click(function () {
-    $("html, body").animate({
-        scrollTop: $("#reel").offset().top
-    }, "slow");
-  });
-
-  //When clicking on Info
   $("#menu-item-3").click(function () {
     $("html, body").animate({
-        scrollTop: $(document).height()
+        scrollTop: $("#reel").offset().top
     }, "slow");
   });
 
@@ -67,7 +74,7 @@ $(window).on('load', function (e) {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-1").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
-    $(".video-thumbnail-text").css("display", "table-cell");
+    $(".video-thumbnail-text").css("display", "flex");
   });
 
   //When clicking on Narrative
@@ -75,7 +82,7 @@ $(window).on('load', function (e) {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-2").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
-    $(".video-thumbnail-text").css("display", "table-cell");
+    $(".video-thumbnail-text").css("display", "flex");
     $(".commercial").css("filter", "brightness(10%)");
     $(".commercial .video-thumbnail-text").css("display", "none");
     $(".documentary").css("filter", "brightness(10%)");
@@ -89,7 +96,7 @@ $(window).on('load', function (e) {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-3").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
-    $(".video-thumbnail-text").css("display", "table-cell");
+    $(".video-thumbnail-text").css("display", "flex");
     $(".narrative").css("filter", "brightness(10%)");
     $(".narrative .video-thumbnail-text").css("display", "none")
     $(".documentary").css("filter", "brightness(10%)");
@@ -103,7 +110,7 @@ $(window).on('load', function (e) {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-4").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
-    $(".video-thumbnail-text").css("display", "table-cell");
+    $(".video-thumbnail-text").css("display", "flex");
     $(".narrative").css("filter", "brightness(10%)");
     $(".narrative .video-thumbnail-text").css("display", "none")
     $(".commercial").css("filter", "brightness(10%)");
@@ -117,7 +124,7 @@ $(window).on('load', function (e) {
     $(".sub-menu-items").css("color", "#fff");
     $("#sub-menu-item-5").css ("color", "#777");
     $(".video-thumbnail-container").css("filter", "brightness(100%)");
-    $(".video-thumbnail-text").css("display", "table-cell");
+    $(".video-thumbnail-text").css("display", "flex");
     $(".narrative").css("filter", "brightness(10%)");
     $(".narrative .video-thumbnail-text").css("display", "none")
     $(".commercial").css("filter", "brightness(10%)");
@@ -130,8 +137,4 @@ $(window).on('load', function (e) {
   $(".video-thumbnail-container").hover(function () {
     $(this).find(".video-thumbnail-text").toggleClass("show-video-thumbnail-text");
   });
-
-  // Get the height of the footer and apply it to the invisible block
-  var footerHeight = $("footer").height();
-  $("#invisible-block").css("height", footerHeight);
 });
