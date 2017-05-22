@@ -16,6 +16,16 @@ html {
   background-attachment: fixed;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #777 !important;
+  cursor: pointer;
+}
+
 #menu {
   z-index: 3;
   position: fixed;
@@ -26,18 +36,6 @@ html {
   line-height: 50px;
   letter-spacing: 3px;
   white-space: nowrap;
-}
-
-#menu a,
-#sub-menu a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#menu a:hover,
-#sub-menu a:hover {
-  color: #777 !important;
-  cursor: pointer;
 }
 
 #menu {
@@ -208,20 +206,16 @@ footer {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
-  background-color: #fff;
-  color: #000;
+  background-color: #111;
+  color: #fff;
   font-size: 17px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 3px;
 }
 
-#about {
-  padding: 0 25%;
-}
-
-#contact {
-  padding: 50px 25% 0 25%;
+#info {
+  padding: 0 25% 50px 25%;
 }
 
 #copyright {
