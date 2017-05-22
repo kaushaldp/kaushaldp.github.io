@@ -38,28 +38,28 @@ $(window).on('load', function (e) {
   $("#arrow-downward").click(function () {
     $("html, body").animate({
         scrollTop: $("#work").offset().top
-    }, 1000);
+    }, "slow");
   });
 
   //When clicking on Work
   $("#menu-item-1").click(function () {
     $("html, body").animate({
         scrollTop: $("#work").offset().top
-    }, 1000);
+    }, "slow");
   });
 
   //When clicking on Reel
   $("#menu-item-2").click(function () {
     $("html, body").animate({
         scrollTop: $("#reel").offset().top
-    }, 1000);
+    }, "slow");
   });
 
   //When clicking on Info
   $("#menu-item-3").click(function () {
     $("html, body").animate({
         scrollTop: $(document).height()
-    }, 1000);
+    }, "slow");
   });
 
   //When clicking on All
