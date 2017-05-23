@@ -1,8 +1,3 @@
-//Start at the top always
-$(window).on('beforeunload', function() {
-  $(window).scrollTop(0);
-});
-
 $(window).on('load', function (e) {
   //Add & Remove Background Images here
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
@@ -33,39 +28,49 @@ $(window).on('load', function (e) {
   //When clicking on Arrow Down
   $("#arrow-downward").click(function () {
     $("html, body").animate({
-        scrollTop: $("#work").offset().top
+      scrollTop: $("#work").offset().top
     }, "slow");
   });
 
   //When clicking on About
   $("#menu-item-1").click(function () {
-    $("#about").fadeIn();
+    $("#about").show("slide",{
+      direction: "left"
+    },"slow");
   });
 
+  //When clicking on Close About Button
   $("#close-about").click(function () {
-    $("#about").fadeOut();
+    $("#about").hide("slide",{
+      direction: "left"
+    },"slow");
   });
 
   //When clicking on Contact
   $("#menu-item-4").click(function () {
-    $("#contact").fadeIn();
+    $("#contact").show("slide",{
+      direction: "right"
+    },"slow");
   });
 
+  //When clicking on Close Contact Button
   $("#close-contact").click(function () {
-    $("#contact").fadeOut();
+    $("#contact").hide("slide",{
+      direction: "right"
+    },"slow");
   });
 
   //When clicking on Work
   $("#menu-item-2").click(function () {
     $("html, body").animate({
-        scrollTop: $("#work").offset().top
+      scrollTop: $("#work").offset().top
     }, "slow");
   });
 
   //When clicking on Reel
   $("#menu-item-3").click(function () {
     $("html, body").animate({
-        scrollTop: $("#reel").offset().top
+      scrollTop: $("#reel").offset().top
     }, "slow");
   });
 
