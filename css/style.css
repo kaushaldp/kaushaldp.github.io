@@ -4,19 +4,11 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  background-color: #000;
   color: #fff;
-  letter-spacing: 3px;
-  margin-right: -3px;
-  font-family: 'Roboto Mono', sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
-}
-
-html {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
 }
 
 a {
@@ -32,49 +24,54 @@ a:hover {
 #menu {
   z-index: 3;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   font-size: 13px;
   text-align: center;
   line-height: 50px;
+  white-space: nowrap;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: 0 25px;
+  letter-spacing: 3px;
 }
 
-.menu-items {
-  padding: 0 13px;
-  display: inline-block;
-  text-align: center;
-}
-
-#main {
-  z-index: 1;
-  position: relative;
+#introduction {
+  position: fixed;
   width: 100%;
   height: 100%;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
 }
 
-#main-text {
-  position: fixed;
+#introduction-text {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  font-size: 3.7vw;
-  line-height: 3.7vw;
+  font-size: 3vw;
+  line-height: 3vw;
   white-space: nowrap;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.7vw;
 }
 
 #name {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 #description {
+  padding-left: 4vw;
   font-weight: 400;
-  padding-left: 3.7vw;
 }
 
 #arrow-downward {
-  position: fixed;
+  position: absolute;
   bottom: 25px;
   left: 0;
   right: 0;
@@ -97,26 +94,34 @@ a:hover {
 #contact {
   display: none;
   z-index: 4;
-  top: 0;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
   background-color: #000;
   color: #fff;
   box-sizing: border-box;
+  border: 1px solid #fff;
 }
 
 #about .content,
 #contact .content {
-  width: 50%;
+  width: 90%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 17px;
+  line-height: 25px;
 }
 
-#close-about {
+#close-about
+#close-contact, {
   position: fixed;
   top: 25px;
   right: 25px;
@@ -126,20 +131,16 @@ a:hover {
   text-align: center;
 }
 
-#close-contact {
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  width: 24px;
-  height: 24px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#close-about:hover,
-#close-contact:hover {
+#close-about:hover
+#close-contact:hover, {
   color: #777 !important;
   cursor: pointer;
+}
+
+#main {
+  z-index: 2;
+  position: relative;
+  top: 100%;
 }
 
 header {
@@ -147,11 +148,10 @@ header {
   font-size: 25px;
   text-align: center;
   line-height: 100px;
-  white-space: nowrap;
   color: #777;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  letter-spacing: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 
 .content {
@@ -166,12 +166,8 @@ header {
   white-space: nowrap;
   overflow: scroll;
   box-sizing: border-box;
-}
-
-.sub-menu-items {
-  padding: 0 13px;
-  text-align: center;
-  display: inline-block;
+  padding: 0 25px;
+  letter-spacing: 3px;
 }
 
 #sub-menu-item-1 {
@@ -193,7 +189,7 @@ header {
   position: relative;
   float: left;
   width: 25%;
-  height: 30vh;
+  height: 37vh;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,6 +212,9 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
   text-align: center;
 }
 
@@ -253,21 +252,20 @@ header {
   height: 100%;
 }
 
-footer {
+#footer {
   position: relative;
   z-index: 2;
   background-color: #000;
-  color: #fff;
   padding-top: 50px;
   line-height: 50px;
   font-size: 13px;
+  letter-spacing: 3px;
   text-align: center;
 }
 
 @media screen and (max-width: 700px) {
-  #main-text {
-    position: absolute;
-    font-size: 7.3vw;
+  #introduction-text {
+    font-size: 7vw;
   }
 
   #name {
@@ -280,13 +278,19 @@ footer {
     width: 100%;
     display: block;
     padding-left: 0;
-    padding-top: 37px;
+    padding-top: 7vw;
     text-align: center;
   }
 
-  #about .content,
-  #contact .content {
-    width: 90%;
+  #about,
+  #contact {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    left: 0;
+    top: 0;
+    border: none;
   }
 
   .video-thumbnail-container {
@@ -306,7 +310,6 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 17px;
-    background-color: #000;
   }
 
   #reel-container {
