@@ -120,9 +120,9 @@ a:hover {
   line-height: 25px;
 }
 
-#close-about
-#close-contact, {
-  position: fixed;
+#close-about,
+#close-contact {
+  position: absolute;
   top: 25px;
   right: 25px;
   width: 24px;
@@ -131,8 +131,8 @@ a:hover {
   text-align: center;
 }
 
-#close-about:hover
-#close-contact:hover, {
+#close-about:hover,
+#close-contact:hover {
   color: #777 !important;
   cursor: pointer;
 }
