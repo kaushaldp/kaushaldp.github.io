@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <title>Kaushal Shah</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700|Rubik:400,500" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cabin:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/script.js"></script>
   </head>
@@ -17,13 +18,13 @@
   <!-- Body -->
   <body>
     <!-- Menu -->
-    <nav id="menu">
-      <a id="menu-item-1" class="menu-items">About</a><a id="menu-item-2" class="menu-items">Work</a><a id="menu-item-3" class="menu-items">Reel</a><a id="menu-item-4" class="menu-items">Contact</a>
-    </nav>
+    <div id="menu">
+      <a id="menu-item-1" class="menu-items">About</a>&nbsp;&nbsp;&nbsp;<a id="menu-item-2" class="menu-items">Work</a>&nbsp;&nbsp;&nbsp;<a id="menu-item-3" class="menu-items">Reel</a>&nbsp;&nbsp;&nbsp;<a id="menu-item-4" class="menu-items">Contact</a>
+    </div>
 
-    <!-- Main -->
-    <div id="main">
-      <div id="main-text">
+    <!-- Introduction -->
+    <div id="introduction">
+      <div id="introduction-text">
         <span id="name">Kaushal Shah</span><span id="description">Cinematographer</span>
       </div>
       <div id="arrow-downward">
@@ -38,7 +39,7 @@
         About
       </header>
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
       </div>
       <div id="close-about">
         <i class="material-icons md-24">close</i>
@@ -52,109 +53,118 @@
         Contact
       </header>
       <div class="content">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          <a href="tel:+1 (323) 317-2971">+1 (323) 317-2971</a>
+          <br>
+          <br>
+          <a href="mailto:kaushalshahcinematography@gmail.com">Email</a>
+          <br>
+          <br>
+          <a href="">Instagram</a>
       </div>
       <div id="close-contact">
         <i class="material-icons md-24">close</i>
       </div>
     </div>
 
-    <!-- Work -->
-    <div id="work">
-      <!-- Header -->
-      <header>
-        Work
-      </header>
+    <!-- Main -->
+    <div id="main">
+      <!-- Work -->
+      <div id="work">
+        <!-- Header -->
+        <header>
+          Work
+        </header>
 
-      <!-- Sub-Menu -->
-      <div id="sub-menu">
-        <a id="sub-menu-item-1" class="sub-menu-items">All</a><a id="sub-menu-item-2" class="sub-menu-items">Narrative</a><a id="sub-menu-item-3" class="sub-menu-items">Commercial</a><a id="sub-menu-item-4" class="sub-menu-items">Documentary</a><a id="sub-menu-item-5" class="sub-menu-items">Music Video</a>
+        <!-- Sub-Menu -->
+        <div id="sub-menu">
+          <a id="sub-menu-item-1" class="sub-menu-items">All</a>&nbsp;&nbsp;&nbsp;<a id="sub-menu-item-2" class="sub-menu-items">Narrative</a>&nbsp;&nbsp;&nbsp;<a id="sub-menu-item-3" class="sub-menu-items">Commercial</a>&nbsp;&nbsp;&nbsp;<a id="sub-menu-item-4" class="sub-menu-items">Documentary</a>&nbsp;&nbsp;&nbsp;<a id="sub-menu-item-5" class="sub-menu-items">Music Video</a>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+          <!-- Video 1 -->
+          <div class="video-thumbnail-container narrative">
+            <div class="video-thumbnail-text">
+              Risus Ligula Dolor Fusce Purus
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ilKzuY9tjyg?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-thumbnail-container commercial">
+            <div class="video-thumbnail-text">
+              Pellentesque Bibendum Magna Cursus Tristique
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3Xq4HfaW87M?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-thumbnail-container commercial">
+            <div class="video-thumbnail-text">
+              Bibendum Venenatis Sem Cras Lorem
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uID456A5ggE?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 4 -->
+          <div class="video-thumbnail-container music-video">
+            <div class="video-thumbnail-text">
+              Sit Parturient Porta Tortor Etiam
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A09fbrJoj4M?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 5 -->
+          <div class="video-thumbnail-container narrative">
+            <div class="video-thumbnail-text">
+              Ultricies Nullam Lorem Nibh Parturient
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxpDa-c-4Mc?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 6 -->
+          <div class="video-thumbnail-container documentary">
+            <div class="video-thumbnail-text">
+              Nullam Mattis Ultricies Vestibulum Malesuada
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vc05crfcKOg?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 7 -->
+          <div class="video-thumbnail-container narrative">
+            <div class="video-thumbnail-text">
+              Bibendum Aenean Purus Vulputate Dolor
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jGflUbPQfW8?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <!-- Video 8 -->
+          <div class="video-thumbnail-container commercial">
+            <div class="video-thumbnail-text">
+              Mattis Etiam Sollicitudin Cras Commodo
+            </div>
+            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K3ksKkCOgTw?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+        </div>
       </div>
 
-      <!-- Content -->
-      <div class="content">
-        <!-- Video 1 -->
-        <div class="video-thumbnail-container narrative">
-          <div class="video-thumbnail-text">
-            Risus Ligula Dolor Fusce Purus
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ilKzuY9tjyg?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
+      <!-- Reel -->
+      <div id="reel">
+        <!-- Header -->
+        <header>
+          Reel
+        </header>
 
-        <!-- Video 2 -->
-        <div class="video-thumbnail-container commercial">
-          <div class="video-thumbnail-text">
-            Pellentesque Bibendum Magna Cursus Tristique
+        <!-- Content -->
+        <div class="content">
+          <div id="reel-container">
+            <iframe src="https://www.youtube.com/embed/2LqzF5WauAw?showinfo=0&color=white" frameborder="0" allowfullscreen></iframe>
           </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3Xq4HfaW87M?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
-
-        <!-- Video 3 -->
-        <div class="video-thumbnail-container commercial">
-          <div class="video-thumbnail-text">
-            Bibendum Venenatis Sem Cras Lorem
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uID456A5ggE?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
-
-        <!-- Video 4 -->
-        <div class="video-thumbnail-container music-video">
-          <div class="video-thumbnail-text">
-            Sit Parturient Porta Tortor Etiam
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A09fbrJoj4M?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
-
-        <!-- Video 5 -->
-        <div class="video-thumbnail-container narrative">
-          <div class="video-thumbnail-text">
-            Ultricies Nullam Lorem Nibh Parturient
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uxpDa-c-4Mc?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
-
-        <!-- Video 6 -->
-        <div class="video-thumbnail-container documentary">
-          <div class="video-thumbnail-text">
-            Nullam Mattis Ultricies Vestibulum Malesuada
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vc05crfcKOg?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
-
-        <!-- Video 7 -->
-        <div class="video-thumbnail-container narrative">
-          <div class="video-thumbnail-text">
-            Bibendum Aenean Purus Vulputate Dolor
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jGflUbPQfW8?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-        </div>
-
-        <!-- Video 8 -->
-        <div class="video-thumbnail-container commercial">
-          <div class="video-thumbnail-text">
-            Mattis Etiam Sollicitudin Cras Commodo
-          </div>
-          <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K3ksKkCOgTw?showinfo=0" frameborder="0" allowfullscreen></iframe> -->
         </div>
       </div>
+
+      <!-- Footer -->
+      <div id="footer"></div>
     </div>
-
-    <!-- Reel -->
-    <div id="reel">
-      <!-- Header -->
-      <header>
-        Reel
-      </header>
-
-      <!-- Content -->
-      <div class="content">
-        <div id="reel-container">
-          <iframe src="https://www.youtube.com/embed/2LqzF5WauAw?showinfo=0&color=white" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer></footer>
   </body>
 </html>
