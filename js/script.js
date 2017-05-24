@@ -1,4 +1,7 @@
 $(window).on('load', function (e) {
+  //FitVids
+  $("#reel-container").fitVids();
+
   //Add & Remove Background Images here
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
   $("#introduction").css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/work/" + backgroundThumbnailImages[Math.floor(Math.random() * backgroundThumbnailImages.length)] + ")"});
@@ -234,16 +237,22 @@ $(window).on('load', function (e) {
       $(".documentary").css("filter", "brightness(10%)");
       $(".documentary .video-thumbnail-text").css("display", "none")
     });
-
-    //When clicking on a project
-    $(".video-thumbnail-container").click(function () {
-      $("#project").fadeIn();
-      var projectTitle = $(this).find(".video-thumbnail-text").text();
-    });
-
-    //When clicking on the close project button
-    $("#close-project").click(function () {
-      $("#project").fadeOut();
-    });
   }
+
+  //When clicking on a project
+  $(".video-thumbnail-container").click(function () {
+    var projectTitle = $(this).find(".video-thumbnail-text").text();
+    var projectVideo = $(this).find(".video-embed-code").html();
+    $("#slide").html(projectVideo);
+    $("#project").fadeIn();
+
+    //FitVids
+    $("#slide").fitVids();
+  });
+
+  //When clicking on the close project button
+  $("#close-project").click(function () {
+    $("#slide").html("");
+    $("#project").fadeOut();
+  });
 });
