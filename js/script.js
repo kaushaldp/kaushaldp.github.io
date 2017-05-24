@@ -238,6 +238,7 @@ $(window).on('load', function (e) {
     //When clicking on a project
     $(".video-thumbnail-container").click(function () {
       $("#project").fadeIn();
+      var projectTitle = $(this).find(".video-thumbnail-text").text();
     });
 
     //When clicking on the close project button
