@@ -51,6 +51,7 @@ $(window).on('load', function (e) {
     $(this).find(".video-thumbnail-text").toggleClass("show-video-thumbnail-text");
   });
 
+  // Media Query
   var mediaQuery = window.matchMedia( "(max-width: 700px)" );
   if (mediaQuery.matches) {
     //When clicking on About
@@ -220,4 +221,14 @@ $(window).on('load', function (e) {
       $(".documentary .video-thumbnail-text").css("display", "none")
     });
   }
+
+  //When clicking on a project
+  $(".video-thumbnail-container").click(function () {
+    $("#project").css("display", "block");
+  });
+
+  //When clicking on the close project button
+  $("#close-project").click(function () {
+    $("#project").css("display", "none");
+  });
 });
