@@ -150,13 +150,13 @@ $(window).on('load', function (e) {
     $("#menu-item-1").click(function () {
       $("#contact").hide();
       $("#menu-item-4").css("color", "#fff");
-      $("#about").fadeIn();
+      $("#about").show();
       $("#menu-item-1").css("color", "#777");
     });
 
     //When clicking on Close About Button
     $("#close-about").click(function () {
-      $("#about").fadeOut();
+      $("#about").hide();
       $("#menu-item-1").css("color", "#fff");
     });
 
@@ -164,13 +164,13 @@ $(window).on('load', function (e) {
     $("#menu-item-4").click(function () {
       $("#about").hide();
       $("#menu-item-1").css("color", "#fff");
-      $("#contact").fadeIn();
+      $("#contact").show();
       $("#menu-item-4").css("color", "#777");
     });
 
     //When clicking on Close Contact Button
     $("#close-contact").click(function () {
-      $("#contact").fadeOut();
+      $("#contact").hide();
       $("#menu-item-4").css("color", "#fff");
     });
 
@@ -241,10 +241,10 @@ $(window).on('load', function (e) {
 
   //When clicking on a project
   $(".video-thumbnail-container").click(function () {
+    $("#project").show();
     var projectTitle = $(this).find(".video-thumbnail-text").text();
     var projectVideo = $(this).find(".video-embed-code").html();
     $("#slide").html(projectVideo);
-    $("#project").fadeIn();
 
     //FitVids
     $("#slide").fitVids();
@@ -253,6 +253,6 @@ $(window).on('load', function (e) {
   //When clicking on the close project button
   $("#close-project").click(function () {
     $("#slide").html("");
-    $("#project").fadeOut();
+    $("#project").hide();
   });
 });
