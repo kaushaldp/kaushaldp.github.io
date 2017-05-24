@@ -128,6 +128,20 @@ $(window).on('load', function (e) {
       $(".commercial").css("display", "none")
       $(".documentary").css("display", "none")
     });
+
+    //When clicking on a project
+    $(".video-thumbnail-container").click(function () {
+      $("#project").show("slide",{
+        direction: "down"
+      },"slow");
+    });
+
+    //When clicking on the close project button
+    $("#close-project").click(function () {
+      $("#project").hide("slide",{
+        direction: "down"
+      }, "slow");
+    });
   } else {
     //When clicking on About
     $("#menu-item-1").click(function () {
@@ -220,15 +234,15 @@ $(window).on('load', function (e) {
       $(".documentary").css("filter", "brightness(10%)");
       $(".documentary .video-thumbnail-text").css("display", "none")
     });
+
+    //When clicking on a project
+    $(".video-thumbnail-container").click(function () {
+      $("#project").fadeIn();
+    });
+
+    //When clicking on the close project button
+    $("#close-project").click(function () {
+      $("#project").fadeOut();
+    });
   }
-
-  //When clicking on a project
-  $(".video-thumbnail-container").click(function () {
-    $("#project").fadeIn();
-  });
-
-  //When clicking on the close project button
-  $("#close-project").click(function () {
-    $("#project").fadeOut();
-  });
 });
