@@ -224,11 +224,11 @@ $(window).on('load', function (e) {
 
   //When clicking on a project
   $(".video-thumbnail-container").click(function () {
-    $("#project").css("display", "block");
+    $("#project").fadeIn();
   });
 
   //When clicking on the close project button
   $("#close-project").click(function () {
-    $("#project").css("display", "none");
+    $("#project").fadeOut();
   });
 });
