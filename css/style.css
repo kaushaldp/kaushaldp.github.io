@@ -33,8 +33,12 @@ a:hover {
   white-space: nowrap;
   overflow: scroll;
   box-sizing: border-box;
-  padding: 0 25px;
+  margin: 0 auto;
   letter-spacing: 3px;
+}
+
+.menu-items {
+  padding: 0 11px;
 }
 
 #introduction {
@@ -166,8 +170,12 @@ a:hover {
   white-space: nowrap;
   overflow: scroll;
   box-sizing: border-box;
-  padding: 0 25px;
+  margin: 0 auto;
   letter-spacing: 3px;
+}
+
+.sub-menu-items {
+  padding: 0 11px;
 }
 
 #sub-menu-item-1 {
@@ -199,6 +207,10 @@ a:hover {
 
 .video-thumbnail-container:hover {
   cursor: pointer;
+}
+
+.video-thumbnail-container .video-embed-code {
+  display: none;
 }
 
 .video-thumbnail-text {
