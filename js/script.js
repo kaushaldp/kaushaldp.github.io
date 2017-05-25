@@ -195,15 +195,15 @@ $(window).on('load', function (e) {
     $("#project").show();
     var projectTitle = $(this).find(".video-thumbnail-text").text();
     var projectVideo = $(this).find(".video-embed-code").html();
-    $("#slide").html(projectVideo);
+    $("##project-slide").html(projectVideo);
 
     //FitVids
-    $("#slide").fitVids();
+    $("##project-slide").fitVids();
   });
 
   //When clicking on the close project button
   $("#close-project").click(function () {
-    $("#slide").html("");
+    $("##project-slide").html("");
     $("#project").hide();
   });
 });
