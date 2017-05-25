@@ -35,17 +35,38 @@ $(window).on('load', function (e) {
     }, "slow");
   });
 
+  //When clicking on About
+  $("#menu-item-1").click(function () {
+    $("#about").show("slide",{
+      direction: "left"
+    },"slow");
+  });
+
+  //When clicking on Close About Button
+  $("#close-about").click(function () {
+    $("#about").hide("slide",{
+      direction: "left"
+    }, "slow");
+  });
+
   //When clicking on Work
   $("#menu-item-2").click(function () {
     $("html, body").animate({
-      scrollTop: $("#work").offset().top
+      scrollTop: $("#reel").offset().top
     }, "slow");
   });
 
   //When clicking on Reel
   $("#menu-item-3").click(function () {
     $("html, body").animate({
-      scrollTop: $("#reel").offset().top
+      scrollTop: $("#work").offset().top
+    }, "slow");
+  });
+
+  //When clicking on Contact
+  $("#menu-item-4").click(function () {
+    $("html, body").animate({
+      scrollTop: $("#contact").offset().top
     }, "slow");
   });
 
@@ -57,34 +78,6 @@ $(window).on('load', function (e) {
   // Media Query
   var mediaQuery = window.matchMedia( "(max-width: 700px)" );
   if (mediaQuery.matches) {
-    //When clicking on About
-    $("#menu-item-1").click(function () {
-      $("#about").show("slide",{
-        direction: "left"
-      },"slow");
-    });
-
-    //When clicking on Close About Button
-    $("#close-about").click(function () {
-      $("#about").hide("slide",{
-        direction: "left"
-      }, "slow");
-    });
-
-    //When clicking on Contact
-    $("#menu-item-4").click(function () {
-      $("#contact").show("slide",{
-        direction: "right"
-      }, "slow");
-    });
-
-    //When clicking on Close Contact Button
-    $("#close-contact").click(function () {
-      $("#contact").hide("slide",{
-        direction: "right"
-      }, "slow");
-    });
-
     //When clicking on All
     $("#sub-menu-item-1").click(function () {
       $(".sub-menu-items").css("color", "#fff");
@@ -131,49 +124,7 @@ $(window).on('load', function (e) {
       $(".commercial").css("display", "none")
       $(".documentary").css("display", "none")
     });
-
-    //When clicking on a project
-    $(".video-thumbnail-container").click(function () {
-      $("#project").show("slide",{
-        direction: "down"
-      },"slow");
-    });
-
-    //When clicking on the close project button
-    $("#close-project").click(function () {
-      $("#project").hide("slide",{
-        direction: "down"
-      }, "slow");
-    });
   } else {
-    //When clicking on About
-    $("#menu-item-1").click(function () {
-      $("#contact").hide();
-      $("#menu-item-4").css("color", "#fff");
-      $("#about").show();
-      $("#menu-item-1").css("color", "#777");
-    });
-
-    //When clicking on Close About Button
-    $("#close-about").click(function () {
-      $("#about").hide();
-      $("#menu-item-1").css("color", "#fff");
-    });
-
-    //When clicking on Contact
-    $("#menu-item-4").click(function () {
-      $("#about").hide();
-      $("#menu-item-1").css("color", "#fff");
-      $("#contact").show();
-      $("#menu-item-4").css("color", "#777");
-    });
-
-    //When clicking on Close Contact Button
-    $("#close-contact").click(function () {
-      $("#contact").hide();
-      $("#menu-item-4").css("color", "#fff");
-    });
-
     //When clicking on All
     $("#sub-menu-item-1").click(function () {
       $(".sub-menu-items").css("color", "#fff");
