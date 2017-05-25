@@ -21,6 +21,10 @@ a:hover {
   cursor: pointer;
 }
 
+.material-icons .md-24 {
+  font-size: 24px;
+}
+
 #menu {
   z-index: 3;
   position: fixed;
@@ -90,42 +94,58 @@ a:hover {
   cursor: pointer;
 }
 
-.material-icons .md-24 {
-  font-size: 24px;
-}
-
-#about,
-#contact {
+#about {
   display: none;
   z-index: 4;
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #000;
   color: #fff;
   box-sizing: border-box;
-  border: 1px solid #fff;
+  overflow: scroll;
 }
 
-#about .content,
-#contact .content {
-  width: 90%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+#about .content {
+  margin: 0 auto;
+  width: 100%;
+  height: calc( 100% - 100px );
   text-align: center;
   letter-spacing: 2px;
   word-spacing: 3px;
   font-size: 17px;
   line-height: 25px;
+  overflow: scroll;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
-#close-about,
-#close-contact {
+#about-picture,
+#about-info {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+#about-picture {
+  height: 50vh;
+  margin: 0 5%;
+  background-image: url(../img/about/profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+#about-info {
+  padding: 0 5%;
+}
+
+#close-about {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -135,8 +155,7 @@ a:hover {
   text-align: center;
 }
 
-#close-about:hover,
-#close-contact:hover {
+#close-about:hover {
   color: #777 !important;
   cursor: pointer;
 }
@@ -158,8 +177,33 @@ a:hover {
   letter-spacing: 3px;
 }
 
-#work .content {
+#reel {
+  z-index: 2;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 50px 25% 0 25%;
   width: 100%;
+  background-color: #000;
+}
+
+#reel-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#work {
+  z-index: 2;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 50px;
+  margin: 0 auto;
+  overflow: auto;
+  background-color: #000;
 }
 
 #sub-menu {
@@ -182,15 +226,8 @@ a:hover {
   color: #777;
 }
 
-#work {
-  z-index: 2;
-  position: relative;
-  box-sizing: border-box;
+#work .content {
   width: 100%;
-  padding-top: 50px;
-  margin: 0 auto;
-  overflow: auto;
-  background-color: #000;
 }
 
 .video-thumbnail-container {
@@ -234,6 +271,38 @@ a:hover {
   visibility: visible;
 }
 
+#contact {
+  position: relative;
+  z-index: 2;
+  background-color: #000;
+  padding-top: 50px;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#contact .content {
+  padding: 10vh 0;
+}
+
+.contact-items {
+  padding: 0 10px;
+}
+
+#footer {
+  position: relative;
+  z-index: 2;
+  background-color: #000;
+  padding-top: 50px;
+  line-height: 50px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
 #project {
   z-index: 4;
   position: fixed;
@@ -246,7 +315,7 @@ a:hover {
   display: none;
 }
 
-#slide {
+#project-slide {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -274,40 +343,6 @@ a:hover {
   cursor: pointer;
 }
 
-#reel {
-  z-index: 2;
-  position: relative;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 50px 25% 0 25%;
-  width: 100%;
-  text-align: center;
-  font-size: 17px;
-  line-height: 25px;
-  letter-spacing: 2px;
-  word-spacing: 3px;
-  background-color: #000;
-}
-
-#reel-container {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-#footer {
-  position: relative;
-  z-index: 2;
-  background-color: #000;
-  padding-top: 50px;
-  line-height: 50px;
-  font-size: 13px;
-  letter-spacing: 3px;
-  text-align: center;
-}
-
 @media screen and (max-width: 700px) {
   #introduction-text {
     font-size: 7vw;
@@ -327,15 +362,33 @@ a:hover {
     text-align: center;
   }
 
-  #about,
-  #contact {
-    position: fixed;
+  #about {
+
+  }
+
+  #about .content {
+    display: block;
+  }
+
+  #about-picture,
+  #about-info {
+    float: none;
+  }
+
+  #about-picture {
     width: 100%;
-    height: 100%;
-    transform: none;
-    left: 0;
-    top: 0;
-    border: none;
+    height: 50vh;
+    margin: 0 auto;
+  }
+
+  #about-info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  #reel {
+    padding: 50px 0;
   }
 
   .video-thumbnail-container {
@@ -346,11 +399,13 @@ a:hover {
     visibility: visible;
   }
 
-  #slide {
+  .contact-items {
+    display: block;
+    padding: 0;
     width: 100%;
   }
 
-  #reel {
-    padding: 50px 0;
+  #project-slide {
+    width: 100%;
   }
 }
