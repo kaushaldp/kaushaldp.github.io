@@ -192,7 +192,9 @@ $(window).on('load', function (e) {
 
   //When clicking on a project
   $(".video-thumbnail-container").click(function () {
-    $("#project").show();
+    $("#project").show("slide",{
+      direction: "down"
+    },"slow");
     var projectTitle = $(this).find(".video-thumbnail-text").text();
     var projectVideo = $(this).find(".video-embed-code").html();
     $("#project-slide").html(projectVideo);
@@ -204,6 +206,8 @@ $(window).on('load', function (e) {
   //When clicking on the close project button
   $("#close-project").click(function () {
     $("#project-slide").html("");
-    $("#project").hide();
+    $("#project").hide("slide",{
+      direction: "down"
+    },"slow");
   });
 });
