@@ -94,72 +94,6 @@ a:hover {
   cursor: pointer;
 }
 
-#about {
-  display: none;
-  z-index: 4;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  color: #fff;
-  box-sizing: border-box;
-  overflow: scroll;
-}
-
-#about .content {
-  margin: 0 auto;
-  width: 100%;
-  height: calc( 100% - 100px );
-  text-align: left;
-  letter-spacing: 2px;
-  word-spacing: 3px;
-  font-size: 17px;
-  line-height: 25px;
-  overflow: scroll;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
-
-#about-picture,
-#about-info {
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
-}
-
-#about-picture {
-  height: 50vh;
-  margin: 0 5%;
-  background-image: url(../img/about/profile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-}
-
-#about-info {
-  padding: 0 5%;
-}
-
-#close-about {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 24px;
-  height: 24px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#close-about:hover {
-  color: #777 !important;
-  cursor: pointer;
-}
-
 #main {
   z-index: 2;
   position: relative;
@@ -271,6 +205,53 @@ a:hover {
   visibility: visible;
 }
 
+#about {
+  z-index: 2;
+  position: relative;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#about .content {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 17px;
+  line-height: 25px;
+  overflow: scroll;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 0 0;
+}
+
+#about-picture,
+#about-info {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+#about-picture {
+  height: 50vh;
+  background-image: url(../img/about/profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+#about-info {
+  padding: 0 50px;
+}
+
 #contact {
   position: relative;
   z-index: 2;
@@ -285,7 +266,7 @@ a:hover {
 }
 
 #contact .content {
-  padding: 10vh 0;
+  padding: 50px 0;
 }
 
 .contact-items {
@@ -298,9 +279,10 @@ a:hover {
   background-color: #000;
   padding-top: 50px;
   line-height: 50px;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 3px;
   text-align: center;
+  color: #777;
 }
 
 #project {
@@ -362,10 +344,6 @@ a:hover {
     text-align: center;
   }
 
-  #about {
-
-  }
-
   #about .content {
     display: block;
   }
@@ -377,14 +355,12 @@ a:hover {
 
   #about-picture {
     width: 100%;
-    height: 50vh;
-    margin: 0 auto;
   }
 
   #about-info {
     width: 90%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
 
   #reel {
