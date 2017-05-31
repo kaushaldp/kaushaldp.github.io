@@ -98,6 +98,7 @@ a:hover {
   z-index: 2;
   position: relative;
   top: 100%;
+  background-color: #000;
 }
 
 .header {
@@ -116,7 +117,7 @@ a:hover {
   position: relative;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 50px 25% 0 25%;
+  padding: 50px 15% 0 15%;
   width: 100%;
   background-color: #000;
 }
@@ -225,14 +226,6 @@ a:hover {
   line-height: 25px;
 }
 
-/*#info-picture,
-#info-about {
-  width: 50%;
-  height: 50vh;
-  float: left;
-  box-sizing: border-box;
-}*/
-
 #info-picture {
   margin: 0 auto;
   width: 70%;
@@ -241,7 +234,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 5%;
-  /*float: left;*/
   box-sizing: border-box;
 }
 
@@ -252,13 +244,6 @@ a:hover {
   background-position: center;
   background-attachment: scroll;
 }
-
-/*#info-about {
-  padding: 0 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
 
 #info-contact {
   float: none;
@@ -414,10 +399,6 @@ a:hover {
     height: auto;
     margin: 0 auto;
     padding: 50px 0 0 0;
-  }
-
-  .hide {
-    display: none;
   }
 
   #info-contact {
