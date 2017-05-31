@@ -49,17 +49,10 @@ $(window).on('load', function (e) {
     }, "slow");
   });
 
-  //When clicking on About
+  //When clicking on Info
   $("#menu-item-3").click(function () {
     $("html, body").animate({
-      scrollTop: $("#about").offset().top
-    }, "slow");
-  });
-
-  //When clicking on Contact
-  $("#menu-item-4").click(function () {
-    $("html, body").animate({
-      scrollTop: $("#contact").offset().top
+      scrollTop: $("#info").offset().top
     }, "slow");
   });
 
