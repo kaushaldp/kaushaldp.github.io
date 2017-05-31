@@ -225,28 +225,40 @@ a:hover {
   line-height: 25px;
 }
 
-#info-picture,
+/*#info-picture,
 #info-about {
   width: 50%;
   height: 50vh;
   float: left;
   box-sizing: border-box;
+}*/
+
+#info-picture {
+  margin: 0 auto;
+  width: 70%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  /*float: left;*/
+  box-sizing: border-box;
 }
 
 #info-picture {
-  background-image: url(../img/about/profile.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/profile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
 }
 
-#info-about {
+/*#info-about {
   padding: 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 #info-contact {
   float: none;
@@ -393,7 +405,7 @@ a:hover {
   }
 
   #info-picture {
-    height: 25vh;
+    height: 50vh;
     width: 100%;
   }
 
