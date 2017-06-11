@@ -31,7 +31,7 @@ $(window).on('load', function (e) {
   //When clicking on Arrow Down
   $("#arrow-downward").click(function () {
     $("html, body").animate({
-      scrollTop: $("#work").offset().top
+      scrollTop: $("#reel").offset().top
     }, "slow");
   });
 
