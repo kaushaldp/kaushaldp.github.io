@@ -20,11 +20,11 @@ $(window).on('load', function (e) {
   //Change color of the menu on scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
-      $('#menu').css("background-color", "#000");
-      $('#menu').css("border-bottom", "1px solid #fff");
+      $("#menu").css("background-color", "#000");
+      $("#menu").css("border-bottom", "1px solid #fff");
     } else {
-      $('#menu').css("background-color", "transparent");
-      $('#menu').css("border-bottom", "none");
+      $("#menu").css("background-color", "transparent");
+      $("#menu").css("border-bottom", "none");
     }
   });
 
