@@ -165,7 +165,7 @@ a:hover {
   width: 100%;
 }
 
-.video-thumbnail-container {
+.project-thumbnail {
   position: relative;
   float: left;
   width: 25%;
@@ -177,15 +177,15 @@ a:hover {
   background-attachment: scroll;
 }
 
-.video-thumbnail-container:hover {
+.project-thumbnail:hover {
   cursor: pointer;
 }
 
-.video-thumbnail-container .video-embed-code {
+.project-thumbnail .video-embed-code {
   display: none;
 }
 
-.video-thumbnail-text {
+.project-thumbnail-text {
   visibility: hidden;
   box-sizing: border-box;
   padding: 0 10%;
@@ -202,7 +202,7 @@ a:hover {
   text-align: center;
 }
 
-.show-video-thumbnail-text {
+.show-project-thumbnail-text {
   visibility: visible;
 }
 
@@ -368,11 +368,11 @@ a:hover {
     padding: 50px 0 0 0;
   }
 
-  .video-thumbnail-container {
+  .project-thumbnail {
     width: 100%;
   }
 
-  .video-thumbnail-text {
+  .project-thumbnail-text {
     visibility: visible;
     font-size: 13px;
     line-height: 17px;

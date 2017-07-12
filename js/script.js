@@ -2,14 +2,16 @@ $(window).on('load', function (e) {
   //FitVids
   $("#reel-container").fitVids();
 
-  //Add & Remove Background Images here
+  //Add & Remove Background Images
   var backgroundThumbnailImages = ["video-1-thumbnail.jpg", "video-2-thumbnail.jpg", "video-3-thumbnail.jpg", "video-4-thumbnail.jpg", "video-5-thumbnail.jpg", "video-6-thumbnail.jpg", "video-7-thumbnail.jpg", "video-8-thumbnail.jpg"];
+
+  //Apply a random background image with a gradient over it
   $("#introduction").css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/work/" + backgroundThumbnailImages[Math.floor(Math.random() * backgroundThumbnailImages.length)] + ")"});
 
   //Applying background images to the Video Thumbnail Containers
   var totalThumbnails = backgroundThumbnailImages.length;
   for (var i = 0; i < totalThumbnails; i++) {
-    $(".video-thumbnail-container:nth-child(" + [i+1] +")").css({"background-image": "url(img/work/" + backgroundThumbnailImages[i] + ")"});
+    $(".project-thumbnail:nth-child(" + [i+1] +")").css({"background-image": "url(img/work/" + backgroundThumbnailImages[i] + ")"});
   }
 
   //Adding the copyright date
@@ -57,8 +59,8 @@ $(window).on('load', function (e) {
   });
 
   //When hovering over the Video Thumbnail Containers
-  $(".video-thumbnail-container").hover(function () {
-    $(this).find(".video-thumbnail-text").toggleClass("show-video-thumbnail-text");
+  $(".project-thumbnail").hover(function () {
+    $(this).find(".project-thumbnail-text").toggleClass("show-project-thumbnail-text");
   });
 
   // Media Query
@@ -68,14 +70,14 @@ $(window).on('load', function (e) {
     $("#sub-menu-item-1").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-1").css ("color", "#777");
-      $(".video-thumbnail-container").css("display", "flex");
+      $(".project-thumbnail").css("display", "flex");
     });
 
     //When clicking on Narrative
     $("#sub-menu-item-2").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-2").css ("color", "#777");
-      $(".video-thumbnail-container").css("display", "flex");
+      $(".project-thumbnail").css("display", "flex");
       $(".commercial").css("display", "none");
       $(".documentary").css("display", "none");
       $(".music-video").css("display", "none");
@@ -85,7 +87,7 @@ $(window).on('load', function (e) {
     $("#sub-menu-item-3").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-3").css ("color", "#777");
-      $(".video-thumbnail-container").css("display", "flex");
+      $(".project-thumbnail").css("display", "flex");
       $(".narrative").css("display", "none")
       $(".documentary").css("display", "none")
       $(".music-video").css("display", "none")
@@ -95,7 +97,7 @@ $(window).on('load', function (e) {
     $("#sub-menu-item-4").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-4").css ("color", "#777");
-      $(".video-thumbnail-container").css("display", "flex");
+      $(".project-thumbnail").css("display", "flex");
       $(".narrative").css("display", "none")
       $(".commercial").css("display", "none")
       $(".music-video").css("display", "none")
@@ -105,7 +107,7 @@ $(window).on('load', function (e) {
     $("#sub-menu-item-5").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-5").css ("color", "#777");
-      $(".video-thumbnail-container").css("display", "flex");
+      $(".project-thumbnail").css("display", "flex");
       $(".narrative").css("display", "none")
       $(".commercial").css("display", "none")
       $(".documentary").css("display", "none")
@@ -115,71 +117,71 @@ $(window).on('load', function (e) {
     $("#sub-menu-item-1").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-1").css ("color", "#777");
-      $(".video-thumbnail-container").css("filter", "brightness(100%)");
-      $(".video-thumbnail-text").css("display", "flex");
+      $(".project-thumbnail").css("filter", "brightness(100%)");
+      $(".project-thumbnail-text").css("display", "flex");
     });
 
     //When clicking on Narrative
     $("#sub-menu-item-2").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-2").css ("color", "#777");
-      $(".video-thumbnail-container").css("filter", "brightness(100%)");
-      $(".video-thumbnail-text").css("display", "flex");
+      $(".project-thumbnail").css("filter", "brightness(100%)");
+      $(".project-thumbnail-text").css("display", "flex");
       $(".commercial").css("filter", "brightness(10%)");
-      $(".commercial .video-thumbnail-text").css("display", "none");
+      $(".commercial .project-thumbnail-text").css("display", "none");
       $(".documentary").css("filter", "brightness(10%)");
-      $(".documentary .video-thumbnail-text").css("display", "none");
+      $(".documentary .project-thumbnail-text").css("display", "none");
       $(".music-video").css("filter", "brightness(10%)");
-      $(".music-video .video-thumbnail-text").css("display", "none");
+      $(".music-video .project-thumbnail-text").css("display", "none");
     });
 
     //When clicking on Commercial
     $("#sub-menu-item-3").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-3").css ("color", "#777");
-      $(".video-thumbnail-container").css("filter", "brightness(100%)");
-      $(".video-thumbnail-text").css("display", "flex");
+      $(".project-thumbnail").css("filter", "brightness(100%)");
+      $(".project-thumbnail-text").css("display", "flex");
       $(".narrative").css("filter", "brightness(10%)");
-      $(".narrative .video-thumbnail-text").css("display", "none")
+      $(".narrative .project-thumbnail-text").css("display", "none")
       $(".documentary").css("filter", "brightness(10%)");
-      $(".documentary .video-thumbnail-text").css("display", "none")
+      $(".documentary .project-thumbnail-text").css("display", "none")
       $(".music-video").css("filter", "brightness(10%)");
-      $(".music-video .video-thumbnail-text").css("display", "none")
+      $(".music-video .project-thumbnail-text").css("display", "none")
     });
 
     //When clicking on Documentary
     $("#sub-menu-item-4").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-4").css ("color", "#777");
-      $(".video-thumbnail-container").css("filter", "brightness(100%)");
-      $(".video-thumbnail-text").css("display", "flex");
+      $(".project-thumbnail").css("filter", "brightness(100%)");
+      $(".project-thumbnail-text").css("display", "flex");
       $(".narrative").css("filter", "brightness(10%)");
-      $(".narrative .video-thumbnail-text").css("display", "none")
+      $(".narrative .project-thumbnail-text").css("display", "none")
       $(".commercial").css("filter", "brightness(10%)");
-      $(".commercial .video-thumbnail-text").css("display", "none")
+      $(".commercial .project-thumbnail-text").css("display", "none")
       $(".music-video").css("filter", "brightness(10%)");
-      $(".music-video .video-thumbnail-text").css("display", "none")
+      $(".music-video .project-thumbnail-text").css("display", "none")
     });
 
     //When clicking on Music Video
     $("#sub-menu-item-5").click(function () {
       $(".sub-menu-items").css("color", "#fff");
       $("#sub-menu-item-5").css ("color", "#777");
-      $(".video-thumbnail-container").css("filter", "brightness(100%)");
-      $(".video-thumbnail-text").css("display", "flex");
+      $(".project-thumbnail").css("filter", "brightness(100%)");
+      $(".project-thumbnail-text").css("display", "flex");
       $(".narrative").css("filter", "brightness(10%)");
-      $(".narrative .video-thumbnail-text").css("display", "none")
+      $(".narrative .project-thumbnail-text").css("display", "none")
       $(".commercial").css("filter", "brightness(10%)");
-      $(".commercial .video-thumbnail-text").css("display", "none")
+      $(".commercial .project-thumbnail-text").css("display", "none")
       $(".documentary").css("filter", "brightness(10%)");
-      $(".documentary .video-thumbnail-text").css("display", "none")
+      $(".documentary .project-thumbnail-text").css("display", "none")
     });
   }
 
   //When clicking on a project
-  $(".video-thumbnail-container").click(function () {
+  $(".project-thumbnail").click(function () {
     $("#project").show();
-    var projectTitle = $(this).find(".video-thumbnail-text").text();
+    var projectTitle = $(this).find(".project-thumbnail-text").text();
     var projectVideo = $(this).find(".video-embed-code").html();
     $("#project-slide").html(projectVideo);
 
