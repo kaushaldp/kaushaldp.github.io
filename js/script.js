@@ -14,11 +14,6 @@ $(window).on('load', function (e) {
     $(".project-thumbnail:nth-child(" + [i+1] +")").css({"background-image": "url(img/work/" + backgroundThumbnailImages[i] + ")"});
   }
 
-  //Adding the copyright date
-  var date = new Date();
-  var year = date.getFullYear();
-  $("#footer").html("Copyright &copy; " + year + " Kaushal Shah");
-
   //Change color of the menu on scroll
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -194,4 +189,9 @@ $(window).on('load', function (e) {
     $("#project-slide").html("");
     $("#project").hide();
   });
+
+  //Adding the copyright text
+  var date = new Date();
+  var year = date.getFullYear();
+  $("#footer").html("Copyright &copy; " + year + " Kaushal Shah");
 });
