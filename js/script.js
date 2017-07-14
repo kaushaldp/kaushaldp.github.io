@@ -185,7 +185,7 @@ $(window).on('load', function (e) {
   });
 
   //When clicking on the close project button
-  $("#close-project").click(function () {
+  $("#close-project-button").click(function () {
     $("#project-slide").html("");
     $("#project").hide();
   });

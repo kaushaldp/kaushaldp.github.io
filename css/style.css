@@ -322,7 +322,7 @@ a:hover {
   justify-content: center;
 }
 
-#close-project {
+#close-project-button {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -332,7 +332,7 @@ a:hover {
   text-align: center;
 }
 
-#close-project:hover {
+#close-project-button:hover {
   color: #777 !important;
   cursor: pointer;
 }
