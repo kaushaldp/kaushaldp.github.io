@@ -1,3 +1,5 @@
+// By Yash Ghelani (Web Developer) in 2017 - https://yashghelani.com
+
 $(window).on('load', function (e) {
   //FitVids
   $("#reel-container").fitVids();

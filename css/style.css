@@ -1,3 +1,5 @@
+/*By Yash Ghelani (Web Developer) in 2017 - https://yashghelani.com*/
+
 html,
 body {
   margin: 0;
@@ -336,6 +338,8 @@ a:hover {
   color: #777 !important;
   cursor: pointer;
 }
+
+/*Media Queries*/
 
 @media screen and (max-width: 700px) {
   #introduction-text {
