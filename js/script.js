@@ -1,4 +1,4 @@
-// By Yash Ghelani (Web Developer) in 2017 - https://yashghelani.com
+// By Yash Ghelani (Web Designer & Developer) in 2017 - https://yashghelani.com
 
 $(window).on('load', function (e) {
   //FitVids
