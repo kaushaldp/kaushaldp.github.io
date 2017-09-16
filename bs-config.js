@@ -10,10 +10,6 @@ module.exports = {
 	"server": "public",
 	"port": 2222,
 	"https" : true,
-	"logLevel": "silent",
-	"logPrefix": "Need",
-	"logFileChanges": false,
-	"logSnippet": false,
-	"notify": false,
-	"minify": true
+	"logPrefix": "Kaushal Shah",
+	"notify": false
 };
