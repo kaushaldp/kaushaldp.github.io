@@ -1,15 +1,9 @@
 module.exports = {
-	"ui": false,
-	"files": "public",
-	"watchEvents": [
-		"change"
-	],
-	"watchOptions": {
-		"ignoreInitial": true
-	},
-	"server": "public",
-	"port": 2222,
-	"https" : true,
-	"logPrefix": "Kaushal Shah",
-	"notify": false
+	files: "public",
+	logLevel: "info",
+	logPrefix: "Kaushal Shah",
+	notify: false,
+	port: 2222,
+	server: "public",
+	ui: false
 };
